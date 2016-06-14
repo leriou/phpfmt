@@ -1,0 +1,17 @@
+# phpfmt's engine will no longer be bundled with the plugin.
+
+From this release, the plugin will download from the phpfmt website the desired
+version of the engine. It means you can pin the formatter engine into a particular
+version should you want to.
+
+In the configuration file, two new options have been added:
+
+```
+{
+	...
+	"engine_channel": "lts", // being lts or alpha
+	"engine_version": "", // the version number within the channel, such as 803.2 - leave empty to upgrade to the latest always.
+	...
+}
+
+```
